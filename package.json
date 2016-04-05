@@ -1,0 +1,17 @@
+{
+  "name": "remotifi-chromeapp",
+  "version": "0.5.0",
+  "description": "Cast videos from Google Chrome to Apple TV ",
+  "author": "Marc Klefter",
+  "scripts": {
+    "rm-build": "rm -rf dist/build"
+  },
+  "devDependencies": {
+    "babel-core": "^6.7.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.6.0"
+  },
+  "dependencies": {
+    "crypto-js": "^3.1.6"
+  }
+}

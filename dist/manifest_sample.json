@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    
+    "name": "",
+    "description": "", 
+	"version": "",
+    
+    "app": {
+        "background": {
+            "scripts": [
+                "build/bundle.js"
+            ]
+        }
+    },
+    
+    "externally_connectable": {
+        "matches": [
+            "*://foo.com/*"
+        ]
+    },
+    
+    "sockets": {
+        "tcpServer": {
+            "listen": "*:*"
+        }
+    }
+}
