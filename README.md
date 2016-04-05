@@ -16,7 +16,12 @@ Build the source:
 
     webpack
     
-This will transpile the project's ES6 code to ES5 and put the resulting bundle in `dist/build/bundle.js`.
+    webpack --watch // watch mode
+    
+This will transpile the project's ES6 code to ES5 and put the resulting bundle in `dist/build/bundle.js`. 
+To clean the build, run 
+
+    npm run rm-build
 
 The `dist` directory contains the chrome app to be installed in the browser. Customize the sample manifest file
 according to your own needs (the resulting manifest file must be named `manifest.json`).

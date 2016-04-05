@@ -1,7 +1,7 @@
 {
-  "name": "remotifi-chromeapp",
-  "version": "0.5.0",
-  "description": "Cast videos from Google Chrome to Apple TV ",
+  "name": "chromeapp-ws",
+  "version": "0.1.0",
+  "description": "WebSocket server for chrome apps",
   "author": "Marc Klefter",
   "scripts": {
     "rm-build": "rm -rf dist/build"
