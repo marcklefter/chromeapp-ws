@@ -329,7 +329,7 @@ let WebSocketDispatcher = (socket, messageHandler) => {
                     fragmentedMessage = null;
                     fragmentedMessageType = null;
                     
-                    // handle (assembled) message. Note that the message handler 
+                    // handle (assembled) message.  
                     messageHandler(transformedApplicationData, sendFn);
                 }
             }
@@ -348,9 +348,9 @@ let WebSocketDispatcher = (socket, messageHandler) => {
 // The 'messageHandler' callback is to be used as follows:
 //
 // messageHandler = (message, sendFn) {
-//  // handle incoming 'message', which may either be text or binary.
+//  // handle incoming 'message', which may either be of type 'string' or an instance of ArrayBuffer.
 //  // ...
-//  // send message to client (TBD: Only text messages currently supported, check typeof message).
+//  // send message to client.
 //  sendFn('Hello World')
 //  sendFn(JSON.stringify({ ... }))
 // }
